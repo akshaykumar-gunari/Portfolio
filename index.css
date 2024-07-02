@@ -42,7 +42,8 @@
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
-    --container-medium-width: 700px; 
+    --container-medium-width: 700px;
+    --container-about-me-width: 2000px; 
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
@@ -554,6 +555,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    max-width: 1800px;
 }
 
 @media(max-width: 900px) {
@@ -570,6 +572,8 @@ body:not(.user-is-tabbing) a:focus {
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+/*        max-width: var(--container-about-me-width);*/
+        max-width: 1000px;
     }
     
     .about__photo-container {
