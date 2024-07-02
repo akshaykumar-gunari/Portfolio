@@ -63,7 +63,7 @@ if (visitCount) {
 counterContainer.innerHTML = visitCount;
 
 function resetCounter() {
-  visitCount = 0;
+  visitCount = 5;
   localStorage.setItem("page_view", 1);
   counterContainer.innerHTML = visitCount;
 };
