@@ -632,12 +632,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 
-
-
-
-
-
-
 .column1 {
     float: left;
     width: 33.33%;
@@ -667,3 +661,45 @@ body:not(.user-is-tabbing) a:focus {
       width: 100%;
     }
   }
+
+
+/* Dashed border */
+hr.dashed {
+  border-top: 0.5px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 1px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 3px solid #bbb;
+  border-radius: 1px;
+}
+
+/* Center child elements */
+body,
+.website-counter {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
+}
+
+/* Styles for website counter container */
+.website-counter {
+}
+
+/* Styles for counter section */
+p1 {
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 5px red;
+    display: inline-block;
+}

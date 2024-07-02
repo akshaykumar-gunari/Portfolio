@@ -41,3 +41,29 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+
+
+//Section on the website counter
+
+var counterContainer = document.querySelector(".website-counter");
+var resetButton = 0;
+var visitCount = localStorage.getItem("page_view");
+
+if (visitCount) {
+  if (resetButton) {
+    resetCounter();
+  }
+  visitCount = Number(visitCount) + 1;
+  localStorage.setItem("page_view", visitCount);
+} else {
+  visitCount = 1;
+  localStorage.setItem("page_view", 1);
+}
+counterContainer.innerHTML = visitCount;
+
+function resetCounter() {
+  visitCount = 0;
+  localStorage.setItem("page_view", 1);
+  counterContainer.innerHTML = visitCount;
+};
